@@ -10,6 +10,6 @@ Features
 
 Tech Stack
 - React.js
-- Firebase
+- PHP
 - TMDB API
 - CSS3
