@@ -1,0 +1,113 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://assets.nflxext.com/ffe/siteui/vlv3/9c5457bf-80a0-4fd4-9f26-24fc257bbcac/1b1ad38a-274f-4313-b89f-9f3d437fd15b/US-en-20230508-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 60px 68px 40px;
+    border-radius: 4px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.title {
+    color: white;
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: background 0.2s;
+}
+
+.input:focus {
+    background: #454545;
+}
+
+.input::placeholder {
+    color: #8c8c8c;
+}
+
+.button {
+    width: 100%;
+    padding: 16px;
+    background: #E50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #f40612;
+}
+
+.error {
+    color: #e87c03;
+    margin-bottom: 16px;
+    padding: 10px;
+    background: rgba(232, 124, 3, 0.1);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.switchText {
+    color: #737373;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.switchLink {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.switchLink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 40px 30px 30px;
+        width: 100%;
+    }
+    
+    .title {
+        font-size: 28px;
+    }
+    
+    .input {
+        padding: 14px;
+        font-size: 14px;
+    }
+    
+    .button {
+        padding: 14px;
+        font-size: 14px;
+    }
+}

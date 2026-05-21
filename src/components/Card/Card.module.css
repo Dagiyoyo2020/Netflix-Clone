@@ -1,0 +1,114 @@
+.card {
+    position: relative;
+    width: 290px;
+    height: 198px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.poster {
+    width: 227px;
+    height: 128px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.hoverEffect {
+    position: absolute;
+    top: -20px;
+    left: 40%;
+    transform: translateX(-50%) scale(0.95);
+    width: 250px;
+    min-height: 220px;
+    background: #111;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 9999;
+}
+.liked {
+  transform: scale(1.0);
+}
+
+h1 {
+    font-size: 15px; 
+    margin-left: 3%;
+}
+.card:hover .hoverEffect {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%);
+    pointer-events: auto;
+}
+
+.hoverImage {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    margin: 8px;
+    align-items: center;
+}
+
+.metadata {
+    color: white;
+    display: flex;
+    gap: 6px;
+    margin: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.circleButtonSmall {
+    border-radius: 50%;
+    background: rgba(34,34,34,0.8);
+    border: 1px solid #555;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    transition: background 0.2s ease, border-color 0.2s ease;
+    width: 24px;
+    height: 24px;
+}
+
+.circleButtonSmall:hover {
+    background:  #333;
+    border-color: #777;
+}
+
+.dot {
+    color: #888;
+    margin: 0 2px;
+}
+
+.genres {
+    color: #bbb;
+    font-size: 11px;
+    margin: 3px 8px 8px 8px;
+    line-height: 1.4;
+}
+
+.tag {
+    color: #ddd;
+    font-size: 12px;
+    
+}
+
